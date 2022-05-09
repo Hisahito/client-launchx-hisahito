@@ -17,7 +17,7 @@
       <div class="form-group">
         <label for="title">Misión</label>
         <input type="text" class="form-control" id="title"
-          v-model="currentExplorer.mission"
+          v-model="currentExplorer.mainStack"
         />
       </div>
     </form>

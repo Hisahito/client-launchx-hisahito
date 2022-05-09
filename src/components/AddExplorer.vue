@@ -14,7 +14,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="title">Username</label>
+        <label for="title">Apellido</label>
         <input
           type="text"
           class="form-control"
@@ -31,7 +31,7 @@
           class="form-control"
           id="mission"
           required
-          v-model="explorer.mission"
+          v-model="explorer.mainStack"
           name="mission"
         />
       </div>
@@ -54,7 +54,7 @@ export default {
         id: null,
         name: "",
         username: "",
-        mission: ""
+        mainStack: ""
       },
       submitted: false
     };
@@ -64,7 +64,7 @@ export default {
       var data = {
         name: this.explorer.name,
         username: this.explorer.username,
-        mission: this.explorer.mission
+        mainStack: this.explorer.mainStack
       };
       ExplorerService.create(data)
         .then(response => {
